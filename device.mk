@@ -181,6 +181,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     MiatollCarrierConfig \
     MiatollFrameworks \
+    MiatollSettings \
     MiatollSystemUI \
     MiatollTelephony \
     MiatollWifi
