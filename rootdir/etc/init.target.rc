@@ -53,6 +53,10 @@ on fs
     mkdir /mnt/vendor/persist/subsys 0770 root system
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/haptics 0755 system system
+    chmod 0664 /sys/class/thermal/thermal_message/sconfig
+    chown system system /sys/class/thermal/thermal_message/sconfig
+    chmod 0666 /sys/class/thermal/thermal_message/temp_state
+    chown system system /sys/class/thermal/thermal_message/temp_state
     # Clean out sensor_temperature from the sensor list
     start vendor.sensors_fixup
 
@@ -70,6 +74,8 @@ on post-fs-data
     mkdir /persist/qti_fp 0700 system system
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/mac_addr 0771 system system
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
 
 on boot
     chown system system /sys/class/drm/card0-DSI-1/disp_param
