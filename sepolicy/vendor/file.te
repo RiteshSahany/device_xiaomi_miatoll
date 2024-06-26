@@ -4,6 +4,6 @@ type fingerprint_data_file, data_file_type, core_data_file_type, file_type;
 
 type persist_subsys_file, vendor_persist_type, file_type;
 
-type thermal_link_device, dev_type;
-
 type sysfs_touchpanel, fs_type, sysfs_type;
+
+type vendor_thermal_data_file, file_type, data_file_type;
