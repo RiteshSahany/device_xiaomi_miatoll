@@ -52,6 +52,4 @@
 /vendor/bin/init\.sensors_fixup\.sh                                           u:object_r:vendor_init-qcom-sensors-sh_exec:s0
 
 # Thermal
-/vendor/bin/hw/android\.hardware\.thermal-service\.pixel                      u:object_r:hal_thermal_default_exec:s0
-/vendor/bin/thermal_symlinks                                                  u:object_r:init-thermal-symlinks-sh_exec:s0
-/dev/thermal(/.*)?                                                            u:object_r:thermal_link_device:s0
+/data/vendor/thermal(/.*)?                                                    u:object_r:vendor_thermal_data_file:s0
