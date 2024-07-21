@@ -14,7 +14,7 @@ static const variant_info_t curtanain_info = {
     .brand = "Redmi",
     .device = "curtana",
     .model = "Redmi Note 10 Lite",
-    .build_fingerprint = "Redmi/curtana_in1/curtana:12/RKQ1.211019.001/V14.0.5.0.SJWINRF:user/release-keys",
+    .build_fingerprint = "Redmi/curtana_in1/curtana:12/RKQ1.211019.001/V14.0.6.0.SJWINRF:user/release-keys",
 };
 
 static const variant_info_t curtana_info = {
