@@ -107,6 +107,9 @@
         <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="146"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="147"/>
         <device name="SND_DEVICE_IN_HANDSET_GENERIC_QMIC" acdb_id="157"/>
+        <device name="SND_DEVICE_IN_HEADSET_MIC_VOICE_RECORD" acdb_id="10018"/>
+        <device name="SND_DEVICE_IN_USB_HEADSET_MIC_VOICE_RECORD" acdb_id="10018"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC_CTS" acdb_id="10032"/>
         <device name="SND_DEVICE_OUT_HEADPHONES" acdb_id="10012"/>
         <device name="SND_DEVICE_OUT_HEADPHONES_44_1" acdb_id="10012"/>
         <device name="SND_DEVICE_OUT_USB_HEADSET" acdb_id="10012"/>
