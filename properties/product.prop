@@ -8,7 +8,7 @@ persist.sys.fuse.passthrough.enable=true
 ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # Phantom process monitoring
-sys.fflag.override.settings_enable_monitor_phantom_procs=false
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Radio
 persist.vendor.qti.telephony.vt_cam_interface=2
