@@ -59,9 +59,7 @@ void set_dalvik_heap() {
         dhi = &dalvik_heap_info_2048;
 
     /* Set props for 4GB Users */
-    if (sys.totalram < GB(5))
-	property_override("ro.config.avoid_gfx_accel", "true");
-        property_override("ro.config.fha_enable", "true");
+    property_override("ro.config.fha_enable", "true");
 	property_override("ro.sys.fw.bg_apps_limit", "32");
 	property_override("ro.config.dha_cached_max", "16");
 	property_override("ro.config.dha_empty_max", "42");
