@@ -58,17 +58,6 @@ void set_dalvik_heap() {
     else
         dhi = &dalvik_heap_info_2048;
 
-    /* Set props for 4GB Users */
-    property_override("ro.config.fha_enable", "true");
-	property_override("ro.sys.fw.bg_apps_limit", "32");
-	property_override("ro.config.dha_cached_max", "16");
-	property_override("ro.config.dha_empty_max", "42");
-	property_override("ro.config.dha_empty_init", "32");
-	property_override("ro.config.dha_lmk_scale", "0.545");
-	property_override("ro.config.dha_th_rate", "2.3");
-	property_override("ro.config.sdha_apps_bg_max", "64");
-	property_override("ro.config.sdha_apps_bg_min", "8");
-
     property_override(HEAPSTARTSIZE_PROP, dhi->heapstartsize);
     property_override(HEAPGROWTHLIMIT_PROP, dhi->heapgrowthlimit);
     property_override(HEAPSIZE_PROP, dhi->heapsize);
