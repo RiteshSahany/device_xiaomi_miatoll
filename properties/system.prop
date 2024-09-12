@@ -26,6 +26,9 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=15
 
+# Maintainer
+ro.genesis.maintainer=RiteshSahany
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
