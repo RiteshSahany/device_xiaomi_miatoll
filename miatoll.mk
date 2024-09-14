@@ -13,9 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -232,6 +229,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
     
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
