@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
+PRODUCT_PACKAGES += \
+    libcrypto_shim
+    
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
