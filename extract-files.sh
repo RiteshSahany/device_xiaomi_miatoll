@@ -68,6 +68,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/4\.0/4\.1/g" "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            [ "$2" = "" ] && return 0
+            echo 'gettid: 1' >> ${2}
+            ;;
         vendor/lib64/camera/components/com.qti.node.watermark.so)
             [ "$2" = "" ] && return 0
             grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
