@@ -145,19 +145,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti
-
-PRODUCT_PACKAGES += \
-    libbatching \
-    libgeofencing \
-    libgnss
-
-PRODUCT_PACKAGES += \
-    flp.conf \
-    gnss_antenna_info.conf \
-    gps.conf \
-    izat.conf
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
