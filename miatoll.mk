@@ -170,7 +170,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libutils.vendor
 
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
