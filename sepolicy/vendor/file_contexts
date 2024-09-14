@@ -58,7 +58,7 @@
 /vendor/lib64/libxml2_vendor\.so                                              u:object_r:same_process_hal_file:s0
 
 # Sensors
-/vendor/bin/hw/android\.hardware\.sensors@2.1-service\.xiaomi-multihal        u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal            u:object_r:hal_sensors_default_exec:s0
 /vendor/bin/init\.sensors_fixup\.sh                                           u:object_r:vendor_init-qcom-sensors-sh_exec:s0
 
 # Thermal

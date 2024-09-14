@@ -7,6 +7,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.sensors</name>
+        <version>2</version>
+        <interface>
+            <name>ISensors</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>com.fingerprints.extension</name>
         <version>1.0</version>
