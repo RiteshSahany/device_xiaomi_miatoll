@@ -2,6 +2,9 @@
 audio.offload.min.duration.secs=30
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
+# Camera
+persist.sys.cam.skip_detach_image=true
+
 # CNE
 persist.vendor.cne.feature=1
 
