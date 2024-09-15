@@ -209,6 +209,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
+TARGET_DISABLE_C2_CODEC := false
+
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
