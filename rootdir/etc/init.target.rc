@@ -188,6 +188,12 @@ on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
     start qcom-post-boot-atoll
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+   
 on property:sys.boot_completed=1
     start qcom-post-boot-atoll
 
