@@ -28,6 +28,7 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=15
 
 # Logs
+persist.log.tag.ACDB-LOADER=S
 persist.log.tag.AnalyticsService=S
 persist.log.tag.KernelCpuUidActiveTimeReader=S
 persist.log.tag.Tracer=S
