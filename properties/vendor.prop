@@ -131,6 +131,7 @@ dalvik.vm.dex2oat64.enabled=true
 # Display
 debug.sdm.support_writeback=0
 debug.sf.auto_latch_unsignaled=0
+debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
