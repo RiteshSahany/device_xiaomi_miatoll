@@ -136,10 +136,19 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-${ro.boot.hwname}.conf
-   class main
-   user root
-   group root
+service thermal-engine /vendor/bin/thermal-engine
+    class main
+    user root
+    group root
+    socket thermal-send-client stream 0660 system oem_2907
+    socket thermal-recv-client stream 0660 system oem_2907
+    socket thermal-recv-passive-client stream 0660 system oem_2907
+    socket thermal-send-rule stream 0660 system oem_2907
+    disabled
+
+on boot && property:ro.boot.hwname=*
+    mount none /vendor/etc/thermal-engine-map-${ro.boot.hwname}.conf /vendor/etc/thermal-engine-map.conf bind
+    start thermal-engine
 
 service vendor.sensors_fixup /vendor/bin/init.sensors_fixup.sh
     class main
