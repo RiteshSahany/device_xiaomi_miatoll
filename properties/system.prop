@@ -13,6 +13,9 @@ persist.vendor.dpm.feature=11
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# HID RAW
+ro.accessibility.support_hidraw=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
