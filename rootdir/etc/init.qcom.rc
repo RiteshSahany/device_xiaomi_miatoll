@@ -241,6 +241,9 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
+    # Dolby
+    start vendor.init-dolby_fix-sh
+
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used by display clients
@@ -733,3 +736,10 @@ service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@
     onrestart restart surfaceflinger
     task_profiles ServiceCapacityLow
     socket pps stream 0660 system system
+
+service vendor.init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
+    class main
+    user media
+    group media
+    disabled
+    oneshot

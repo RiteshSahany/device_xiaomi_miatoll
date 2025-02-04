@@ -4,6 +4,9 @@
 # Charger
 /vendor/bin/batterysecret                                                     u:object_r:batterysecret_exec:s0
 
+# Dolby Fix script
+/vendor/bin/init\.dolby_fix\.sh                                               u:object_r:vendor_init-dolby-sh_exec:s0
+
 # Fingerprint
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi     u:object_r:hal_fingerprint_default_exec:s0
 
