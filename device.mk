@@ -89,6 +89,9 @@ TARGET_USES_CUSTOM_DOLBY_XML := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dolby_fix.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.dolby_fix.sh
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
