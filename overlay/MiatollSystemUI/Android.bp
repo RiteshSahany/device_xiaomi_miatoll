@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "WifiOverlay",
-    vendor: true
+    name: "MiatollSystemUI",
+    vendor: true,
 }
