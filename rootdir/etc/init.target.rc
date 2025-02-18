@@ -29,6 +29,7 @@
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
+    setprop ro.boot.hardware.revision ${ro.boot.hwc}_${ro.boot.hwlevel}_${ro.boot.hwversion}
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
