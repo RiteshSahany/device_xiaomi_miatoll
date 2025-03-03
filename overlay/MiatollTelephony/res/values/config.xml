@@ -5,9 +5,6 @@
 -->
 <resources>
 
-    <!-- Show Preferred Network Type options in No SIM case -->
-    <bool name="config_no_sim_display_network_modes">true</bool>
-
     <!-- Flag indicating whether the device supports RTT (real-time text) -->
     <bool name="config_support_rtt">true</bool>
 
