@@ -185,6 +185,10 @@ debug.hwui.target_cpu_time_percent=30
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Logging
+persist.log.tag.QC2Buf=W
+persist.log.tag.QC2V4l2Codec=E
+
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
 
