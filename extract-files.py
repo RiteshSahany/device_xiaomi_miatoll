@@ -74,16 +74,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
-    'system_ext/etc/init/wfdservice.rc': blob_fixup()
-        .regex_replace(r'(start|stop) wfdservice\b', r'\1 wfdservice64'),
-    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .remove_needed('android.hidl.base@1.0.so')
-        .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so'),
-    'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
