@@ -2,7 +2,7 @@
 debug.sf.hw=1
 
 # eBPF
-ro.bpf.kver_override=5.4.186
+ro.bpf.kver_override=5.4.299
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
