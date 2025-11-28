@@ -187,7 +187,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     MiatollAperture \
-    MiatollLineageDialer \
     MiatollLineageSDK
 
 # Partitions
