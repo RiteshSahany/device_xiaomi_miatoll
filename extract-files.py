@@ -105,10 +105,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
-    'system_ext/etc/init/wfdservice.rc': blob_fixup()
-        .regex_replace(r'(start|stop) wfdservice\b', r'\1 wfdservice64'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .remove_needed('android.hidl.base@1.0.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
