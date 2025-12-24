@@ -479,4 +479,7 @@
          in which case a DUN network will be used if required). -->
     <bool translatable="false" name="config_tether_upstream_automatic">true</bool>
 
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
 </resources>
