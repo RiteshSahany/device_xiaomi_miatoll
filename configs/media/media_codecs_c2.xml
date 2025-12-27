@@ -58,6 +58,28 @@
         <Setting name="max-video-encoder-input-buffers" value="11" />
     </Settings>
     <Decoders>
+        <!-- DOLBY_UDC -->
+        <MediaCodec name="c2.dolby.eac3.decoder" >
+            <Type name="audio/ac3">
+                <Alias name="OMX.dolby.ac3.decoder" />
+                <Limit name="channel-count" max="6" />
+                <Limit name="sample-rate" ranges="32000,44100,48000" />
+                <Limit name="bitrate" range="32000-640000" />
+            </Type>
+            <Type name="audio/eac3">
+                <Alias name="OMX.dolby.eac3.decoder" />
+                <Limit name="channel-count" max="8" />
+                <Limit name="sample-rate" ranges="32000,44100,48000" />
+                <Limit name="bitrate" range="32000-6144000" />
+            </Type>
+            <Type name="audio/eac3-joc">
+                <Alias name="OMX.dolby.eac3-joc.decoder" />
+                <Limit name="channel-count" max="16" />
+                <Limit name="sample-rate" ranges="48000" />
+                <Limit name="bitrate" range="32000-6144000" />
+            </Type>
+        </MediaCodec>
+        <!-- DOLBY_UDC END -->
         <!-- C2 decoders -->
         <MediaCodec name="c2.qti.avc.decoder" type="video/avc">
             <Alias name="OMX.qcom.video.decoder.avc" />
