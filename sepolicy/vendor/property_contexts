@@ -1,0 +1,9 @@
+# Camera
+vendor.camera.				u:object_r:vendor_camera_prop:s0
+
+# Fingerprint
+persist.vendor.sys.fp.                  u:object_r:vendor_fingerprint_prop:s0
+vendor.sys.fp                           u:object_r:vendor_fingerprint_prop:s0
+
+# Thermal
+vendor.thermal.                         u:object_r:vendor_thermal_prop:s0

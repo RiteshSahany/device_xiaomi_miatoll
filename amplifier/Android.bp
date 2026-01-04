@@ -1,0 +1,38 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "audio_amplifier.tas2562",
+    relative_install_path: "hw",
+    vendor: true,
+    owner: "qti",
+
+    srcs: [
+        "tas2562.c",
+    ],
+
+    include_dirs: [
+        "external/tinyalsa/include",
+        "external/tinycompress/include",
+        "hardware/qcom-caf/sm8150/audio/hal",
+        "hardware/qcom-caf/sm8150/audio/hal/audio_extn",
+        "hardware/qcom-caf/sm8150/audio/hal/msm8974",
+        "system/media/audio_route/include",
+        "system/media/audio_utils/include",
+    ],
+
+    header_libs: [
+        "libhardware_headers",
+        "qti_kernel_headers",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libdl",
+        "libhardware",
+        "liblog",
+        "libtinyalsa",
+    ],
+}
